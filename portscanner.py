@@ -14,7 +14,7 @@ h_port = raw_input("To PORT: ")
 starttime=datetime.now()
 
 try:
-    for port in range(int(l_port),int(h_port)):
+    for port in range(int(l_port),int(h_port)+1):
         sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         result = sock.connect_ex((server_ip,port))
         if (result == 0):
