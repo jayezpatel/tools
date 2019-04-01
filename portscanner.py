@@ -38,5 +38,3 @@ endtime=datetime.now()
 totaltime=endtime-starttime
 
 print "Total time to scan : ", totaltime
-
-
