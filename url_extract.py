@@ -9,11 +9,11 @@ headers = {'User-Agent': user_agent}
 page = requests.get(url,headers=headers)
 soup = BeautifulSoup(page.content)
 links = []
+count = 0
 
 for link in soup.findAll('a', attrs={'href': re.compile("^http[s]*://")}):
     links.append(link.get('href'))
 
-i = 0
 for urls in links:
-    print links[i]
-    i = i+1
+    print links[count]
+    count = count+1
