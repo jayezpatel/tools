@@ -9,8 +9,8 @@ subprocess.call('clear',shell=True)
 
 remote_server = raw_input("Enter the IP or Hostname to scan: ")
 server_ip = socket.gethostbyname(remote_server)
-l_port = raw_input("From PORT: ")
-h_port = raw_input("To PORT: ")
+l_port = raw_input("From range: ")
+h_port = raw_input("To range: ")
 starttime=datetime.now()
 
 try:
